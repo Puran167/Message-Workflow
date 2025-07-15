@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const sendWelcomeEmail = async (to, username) => {
   try {
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'noreply@resend.dev',
       to,
       subject: `Welcome to Messageflow 🎉`,
       html: `
